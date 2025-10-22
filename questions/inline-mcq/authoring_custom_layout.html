@@ -1,0 +1,39 @@
+<div class="lrn-qe-edit-form">
+  <span data-lrn-qe-label="content"></span>
+  <span data-lrn-qe-input="content" class="lrn-qe-ckeditor-lg"></span>
+
+  <div
+    data-lrn-qe-loop="responses[*]"
+    class="lrn-qe-accordion-item lrn-qe-row-flex"
+  >
+    <div class="lrn-qe-margin-bottom-xs lrn-qe-padding-md lrn-qe-flex-full">
+      <span class="lrn-qe-flex-full">Response</span>
+      <div
+        data-lrn-qe-loop="responses[*].options[*]"
+        class="lrn-qe-col-sm-offset-1 lrn-qe-display-flex"
+      >
+        <span
+          class="lrn-qe-flex-full"
+          data-lrn-qe-input="responses[*].options[*].value"
+        ></span>
+        <span
+          class="lrn-qe-flex-full lrn-qe-margin-left-xs"
+          data-lrn-qe-input="responses[*].options[*].correct"
+        ></span>
+        <span data-lrn-qe-action-remove="responses[*].options[*]"></span>
+      </div>
+      <div class="lrn-qe-display-flex">
+        <span
+          class="lrn-qe-toolbar-right"
+          data-lrn-qe-action-add="responses[*].options"
+        ></span>
+      </div>
+      <div>
+        <span data-lrn-qe-label="responses[*].distractorRationale"></span>
+        <span data-lrn-qe-input="responses[*].distractorRationale" class="lrn-qe-ckeditor-lg"></span>
+      </div>
+    </div>
+    <span data-lrn-qe-action-remove="responses[*]"></span>
+  </div>
+  <span data-lrn-qe-action-add="responses"></span>
+</div>
